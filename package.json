@@ -1,6 +1,6 @@
 {
   "name": "battleshipjs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Battleship CLI game with customizations",
   "keywords": [
     "battleship",
