@@ -11,12 +11,14 @@ const argv = yargs
     'r': {
       alias: 'rows',
       describe: 'Number of rows in the board (default: 10)',
-      type: 'number'
+      type: 'number',
+      default: 10
     },
     'c': {
       alias: 'cols',
       describe: 'Number of columns in the board (default: 10)',
-      type: 'number'
+      type: 'number',
+      default: 10
     },
     'm': {
       alias: 'multiplayer',
@@ -360,14 +362,8 @@ const attackShipUser = async (player1, player2, selfBoard, board) => {
 };
 
 const main = async () => {
-  rows = 10;
-  if (argv.r) {
-    rows = argv.r;
-  }
-  cols = 10;
-  if (argv.c) {
-    cols = argv.c;
-  }
+  rows = argv.r;
+  cols = argv.c;
   let singlePlayer = true;
   if (argv.m) {
     singlePlayer = false;
