@@ -10,13 +10,13 @@ const argv = yargs
   .options({
     'r': {
       alias: 'rows',
-      describe: 'Number of rows in the board (default: 10)',
+      describe: 'Number of rows in the board',
       type: 'number',
       default: 10
     },
     'c': {
       alias: 'cols',
-      describe: 'Number of columns in the board (default: 10)',
+      describe: 'Number of columns in the board',
       type: 'number',
       default: 10
     },
