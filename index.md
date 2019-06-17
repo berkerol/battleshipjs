@@ -1,34 +1,58 @@
-# Battleship
+# Battleship.js
 
-Remake of the classic game with customization options for adding variety. You can set these options using _BattleshipConfiguration.ini_ file after building (Hard-coding options into code is not necessary).
+A Battleship CLI game with customizations. You can view it [on npm](https://www.npmjs.com/package/battleshipjs).
 
-![ss](screenshots/ss.bmp)
+## Features
 
-## Customizations & Features
+* Set the number of each 5 ship type.
+* Set the number of rows and columns in the board.
+* Play against computer or against another player in hotseat mode.
+* Choose which player plays first.
+* Choose whether to end attack turn even if player hits.
+* Set names of players.
+* Also randomly place your ships and attack opponent's ships.
 
-- Choose which player plays first.
-- Choose whether to continue to attack or not when the opponent is hit.
-- **Play against computer (decides randomly) or against another player (hot seat).**
-- **Specify the number of rows and columns of the board.**
-- **Specify the number of each 6 ship type.**
-- Randomly place your ships and attack opponent's ships.
-- Viewing information about overall healthy and hit units.
-- Viewing bars with row and column numbers for easier moves.
-- Controlling the empty space of the board for ship placement.
-- Controlling the area (whether it is occupied or hit before).
+## Board
 
-## Board Representation & Ship Types
+* Empty: **O**
+* Boat (1 space): **B**
+* Frigate (2 spaces): **F**
+* Destroyer (3 spaces): **D**
+* Cruiser (4 spaces): **C**
+* Aircraft carrier (5 spaces): **A**
+* Miss: **X**
+* Hit: **\***
 
-- Hit areas
+## Installation
 
-  - Empty: _X_
-  - Non-empty: *
+```
+$ npm install battleshipjs
+```
 
-- Non-hit areas
+## Usage
 
-  - Empty: _O_
-  - Aircraft carrier (5 units long): _A_
-  - Cruiser (4 units long): _C_
-  - Destroyer (3 units long): _D_
-  - Frigate (2 units long): _F_
-  - Boat (1 unit long): _B_
+Flag | Short | Description | Usage
+-----|-------|---------|------
+`--rows` | `-r` | Set number of rows in the board | `-r 15`
+`--cols` | `-c` | Set number of cols in the board | `-c 20`
+`--multiplayer` | `-m` | Play against another player | `-m`
+`--swap` | `-s` | Swap player turns (Player2 plays first) | `-s`
+`--end` | `-e` | End attack turn even if player hits | `-e`
+`--first` | `-f` | Set name of first player | `-f berk`
+`--second` | `-n` | Set name of second player | `-n erol`
+
+## Examples
+
+Example | Description
+--------|------------
+`$ battleship` | Starts a new game with default settings
+`$ battleship -r 15` | Starts a new game with 15 rows
+`$ battleship -c 20` | Starts a new game with 20 cols
+`$ battleship -r 15 -c 20` | Starts a new game with 15 rows and 20 cols
+`$ battleship -m` | Starts a new game in mutliplayer hotseat mode
+`$ battleship -s` | Starts a new game in which Player2 plays first
+`$ battleship -e` | Starts a new game which ends attack turn even if player hits
+`$ battleship -f berk` | Starts a new game with name of first player
+`$ battleship -n erol` | Starts a new game with name of second player
+`$ battleship -f berk -n erol` | Starts a new game with names of first and second players
+`$ battleship -m -f berk` | Starts a new game in multiplayer with name of first player

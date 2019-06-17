@@ -1,0 +1,34 @@
+{
+  "name": "battleshipjs",
+  "version": "1.0.0",
+  "description": "A Battleship CLI game with customizations",
+  "keywords": [
+    "battleship",
+    "battleship-game",
+    "game",
+    "cli"
+  ],
+  "homepage": "https://berkerol.github.io/battleshipjs",
+  "bugs": {
+    "url": "https://github.com/berkerol/battleshipjs/issues",
+    "email": "berk.erol@boun.edu.tr"
+  },
+  "license": "GPL-3.0-or-later",
+  "author": "Berk Erol <berk.erol@boun.edu.tr> (https://berkerol.github.io)",
+  "main": "app.js",
+  "preferGlobal": true,
+  "bin": {
+    "battleship": "./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/berkerol/battleshipjs.git"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "tty-table": "^2.7.0",
+    "yargs": "^13.2.4"
+  }
+}
