@@ -1,11 +1,13 @@
 # Battleship.js
 
+[![NPM](https://nodei.co/npm/battleshipjs.png)](https://nodei.co/npm/battleshipjs/)
+
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/berkerol/battleshipjs/issues)
 [![semistandard](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg)](https://github.com/Flet/semistandard)
 [![ECMAScript](https://img.shields.io/badge/ECMAScript-latest-brightgreen.svg)](https://www.ecma-international.org/ecma-262)
 [![license](https://img.shields.io/badge/license-GNU%20GPL%20v3.0-blue.svg)](https://github.com/berkerol/battleshipjs/blob/master/LICENSE)
 
-A Battleship CLI game with customizations. You can view it [on npm](https://www.npmjs.com/package/battleshipjs).
+A Battleship CLI game with customizations.
 
 ## Features
 
