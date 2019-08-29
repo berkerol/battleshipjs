@@ -257,7 +257,7 @@ const addShipUser = async (player, board, shipIndex, shipSize, shipName) => {
     addShipRandom(player, board, shipIndex, shipSize, shipName);
   } else {
     let begRow = position[0];
-    let endRow = position[1];
+    let endRow;
     let begCol;
     let endCol;
     while (true) {
