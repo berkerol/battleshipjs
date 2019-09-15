@@ -29,6 +29,6 @@
   },
   "dependencies": {
     "tty-table": "^2.7.0",
-    "yargs": "^13.2.4"
+    "yargs": "^14.0.0"
   }
 }
