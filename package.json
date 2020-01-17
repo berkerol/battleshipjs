@@ -28,7 +28,7 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "tty-table": "^2.7.0",
-    "yargs": "^15.0.0"
+    "tty-table": "^2.8.5",
+    "yargs": "^15.1.0"
   }
 }
