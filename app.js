@@ -8,39 +8,39 @@ const yargs = require('yargs');
 
 const argv = yargs
   .options({
-    'r': {
+    r: {
       alias: 'rows',
       describe: 'Number of rows in the board',
       type: 'number',
       default: 10
     },
-    'c': {
+    c: {
       alias: 'cols',
       describe: 'Number of columns in the board',
       type: 'number',
       default: 10
     },
-    'm': {
+    m: {
       alias: 'multiplayer',
       describe: 'Play against another player in hotseat mode',
       type: 'boolean'
     },
-    's': {
+    s: {
       alias: 'swap',
       describe: 'Swap player turns (Computer/Player2 plays first)',
       type: 'boolean'
     },
-    'e': {
+    e: {
       alias: 'end',
       describe: 'End attack turn even if player hits',
       type: 'boolean'
     },
-    'f': {
+    f: {
       alias: 'first',
       describe: 'Name of first player',
       type: 'string'
     },
-    'n': {
+    n: {
       alias: 'second',
       describe: 'Name of second player',
       type: 'string'
@@ -408,15 +408,15 @@ const main = async () => {
   } while (!controlBoard(board1));
   while (controlBoard(board1) && controlBoard(board2)) {
     if (firstPlay) {
-      while (controlBoard(board1) && controlBoard(board2) && await attackShipUser(player1, player2, board1, board2) && continueAttack);
+      while (controlBoard(board1) && controlBoard(board2) && await attackShipUser(player1, player2, board1, board2) && continueAttack); // eslint-disable-line no-unmodified-loop-condition
     }
     if (singlePlayer) {
-      while (controlBoard(board1) && controlBoard(board2) && await attackShipRandom(player2, board1) && continueAttack);
+      while (controlBoard(board1) && controlBoard(board2) && await attackShipRandom(player2, board1) && continueAttack); // eslint-disable-line no-unmodified-loop-condition
     } else {
-      while (controlBoard(board1) && controlBoard(board2) && await attackShipUser(player2, player1, board2, board1) && continueAttack);
+      while (controlBoard(board1) && controlBoard(board2) && await attackShipUser(player2, player1, board2, board1) && continueAttack); // eslint-disable-line no-unmodified-loop-condition
     }
     if (!firstPlay) {
-      while (controlBoard(board1) && controlBoard(board2) && await attackShipUser(player1, player2, board1, board2) && continueAttack);
+      while (controlBoard(board1) && controlBoard(board2) && await attackShipUser(player1, player2, board1, board2) && continueAttack); // eslint-disable-line no-unmodified-loop-condition
     }
   }
   console.log('Game over.');

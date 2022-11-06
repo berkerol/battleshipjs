@@ -3,6 +3,7 @@
 [![NPM](https://nodei.co/npm/battleshipjs.png)](https://nodei.co/npm/battleshipjs/)
 
 [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=berkerol_battleshipjs&metric=alert_status)](https://sonarcloud.io/dashboard?id=berkerol_battleshipjs)
+[![CI](https://github.com/berkerol/battleshipjs/actions/workflows/lint.yml/badge.svg?branch=master)](https://github.com/berkerol/battleshipjs/actions/workflows/lint.yml)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/berkerol/battleshipjs/issues)
 [![semistandard](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg)](https://github.com/Flet/semistandard)
 [![ECMAScript](https://img.shields.io/badge/ECMAScript-latest-brightgreen.svg)](https://www.ecma-international.org/ecma-262)
@@ -64,6 +65,10 @@ Example | Description
 `$ battleship -n erol` | Starts a new game with name of second player
 `$ battleship -f berk -n erol` | Starts a new game with names of first and second players
 `$ battleship -m -f berk` | Starts a new game in multiplayer with name of first player
+
+## Continous Integration
+
+It is setup using GitHub Actions in `.github/workflows/lint.yml`
 
 ## Contribution
 
